@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Me</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Information -->
+        <section id="contact-info">
+            <h2>Get In Touch</h2>
+            <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.</p>
+            
+            <h3>Contact Details</h3>
+            <ul>
+                <li>Email: ruthgezahegn62@gmail.com</li>
+                <li>Phone: +251 901121245</li>
+                <li>Location: Addis Ababa,Ethiopia</li>
+                <li>Available for freelance projects</li>
+            </ul>
+            
+            <h3>My Online Profiles</h3>
+            <p>
+                <a href="https://github.com" target="_blank" title="My GitHub">GitHub</a> |
+                <a href="https://linkedin.com" target="_blank" title="My LinkedIn">LinkedIn</a> 
+            </p>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="form">
+            <h2>Send Me a Message</h2>
+            
+            <form action="#" method="post">
+                <!-- Text Input for Name -->
+                <div>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Ruth Gezahegn">
+                </div>
+                
+                <!-- Email Input -->
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="ruthgezahegn62@gmail.com">
+                </div>
+                
+                <!-- Number Input for Age -->
+                <div>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="13" max="100" placeholder="20">
+                </div>
+                
+                <!-- Radio Buttons for Gender -->
+                <div>
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+                
+                <!-- Subject Selection -->
+                <div>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="project">Project Inquiry</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="question">General Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Message Textarea -->
+                <div>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <!-- Range Input for Urgency -->
+                <div>
+                    <label for="urgency">Urgency Level (1=Low, 10=High):</label><br>
+                    <input type="range" id="urgency" name="urgency" min="1" max="10" value="5">
+                    <span id="urgency-value">5</span>
+                </div>
+                
+                <!-- Checkbox for Newsletter -->
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Subscribe to my newsletter for updates</label>
+                </div>
+                
+                <!-- Checkbox for Agreement -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                
+                <!-- Submit and Reset Buttons -->
+                <div>
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                    <button type="button" onclick="alert('This is a regular button!')">Regular Button</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Response Time Info -->
+        <section id="response">
+            <h3>What to Expect</h3>
+            <ul>
+                <li>I typically respond within 24-48 hours</li>
+                <li>Weekend messages may be answered on Monday</li>
+                <li>For urgent matters, please indicate in the urgency slider</li>
+                <li>I appreciate detailed messages with specific questions</li>
+            </ul>
+        </section>
+
+        <!-- Quick Links Back -->
+        <section id="navigation">
+            <h3>Quick Navigation</h3>
+            <p>
+                <a href="index.html#skills">View My Skills</a> |
+                <a href="about.html#biography">Read My Biography</a> |
+                <a href="index.html#schedule">See My Schedule</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2025 Ruth Gezahegn. All rights reserved.</p>
+        <p>This contact form is for demonstration purposes only.</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="#form">Back to Form</a></p>
+    </footer>
+
+    <!-- Simple JavaScript for Range Display -->
+    <script>
+        // Update range value display
+        document.getElementById('urgency').addEventListener('input', function() {
+            document.getElementById('urgency-value').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
